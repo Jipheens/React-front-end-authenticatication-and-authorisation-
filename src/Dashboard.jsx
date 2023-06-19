@@ -95,12 +95,21 @@ function exportTableToPDF() {
             </thead>
             <tbody>
               {data.map(product => (
+<<<<<<< HEAD
                 <tr key={product.ItemCode}>
                   <td>{product.ItemCode}</td>
                   <td>{product.ItemName}</td>
                   <td>{product.BuyingPrice}</td>
                   <td>{product.SellingPrice}</td>
                   <td>{product.Terminus}</td>
+=======
+                <tr key={product.itemCode}>
+                  <td>{product.itemCode}</td>
+                  <td>{product.itemName}</td>
+                  <td>{product.buyingPrice}</td>
+                  <td>{product.sellingPrice}</td>
+                  <td>{product.terminus}</td>
+>>>>>>> e9f3a65e0e01770cd91cf1ab887c99afd64a5205
                   <td>
                   <Link to={"/"+product.itemCode+"/edit"}><button class="btn btn-primary btn-sm"  >EDIT</button></Link>
                   <button className="btn btn-danger btn-sm"  onClick={()=>handleDelete(product.itemCode)}>DELETE</button>
